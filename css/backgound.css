@@ -1,0 +1,21 @@
+.background {
+    display: flex;
+    position: absolute;
+    top: 108px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: -1;
+    max-width: 1920px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background-img {
+
+}
+
+@media (max-width: 1200px) {
+    .background {
+        display: none;
+    }
+}

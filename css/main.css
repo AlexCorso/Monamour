@@ -1,0 +1,59 @@
+@import "reset.css";
+@import "fonts.css";
+@import "theme.css";
+@import "backgound.css";
+@import "navbar.css";
+@import "footer.css";
+
+* {
+    font-family: 'Open Sans', Inter, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navbar-wrapper,.footer {
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1144px;
+    margin: 0 auto;
+}
+
+.common-button {
+    display: inline-block;
+    min-width: 412px;
+    padding: 22px 36px;
+    border: 3px solid;
+    font-size: 26px;
+    line-height: 35px;
+    text-align: center;
+    color:var(--black-common);
+    text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+    .common-button {
+        min-width: 296px;
+        padding: 20px 36px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
